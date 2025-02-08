@@ -1,0 +1,119 @@
+body {
+    background-image: url("./grass.png");
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+   
+}
+
+.lane {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    width: 100%;
+    background-image: url("./dirt.png");
+    background-repeat: repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#seats {
+    height: 25vh;
+    background-image: url("./steats.png");
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    color: whitesmoke;
+    justify-self: center;
+}
+
+#field {
+    background-color: gray;
+    height: 60vh;
+    margin-top: 5%;
+
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.horse {
+    position: relative;
+    left: 0px;
+    align-self: center;
+    margin-left: 1%;
+    height: 65px;
+    width: 65px;
+    background-image: url("./horse.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    font-size: x-large;
+    text-shadow: black 2px 2px 2px;
+}
+
+#h1{
+    color: red;
+}
+
+#h2{
+    color: aquamarine;
+}
+
+#h3{
+    color: greenyellow;
+}
+
+#h4{
+    color: coral;
+}
+
+#h5{
+    color:gold
+}
+
+
+.finish-line {
+    position: fixed;
+    top: 32.5%;
+    right: 5%;
+    height: 65%;
+    background-color: whitesmoke;
+    width: 5px;
+}
+
+.finish-line#black{
+    right: calc(5% - 5px);
+    background-color: black;
+}
+
+h1{
+    text-shadow: black 2px 2px 2px;
+}
+
+.timer{
+    
+    color: aqua;
+    
+    align-self: center;
+    top: -6%;
+    position: relative
+}
+
+
+h1#winner{
+    visibility: hidden;
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+    left: 40%;
+    right: 40%;
+    color: hotpink;
+}
+

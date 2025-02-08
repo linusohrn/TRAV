@@ -1,0 +1,4 @@
+NOTES
+
+
+Horses ska ha en default speed, mellan 5-15 och en variability på 1-10. Speed är deras maxhastighet, och variability bestämmer hur nära de ligger sin maxhastighet som kommer till att variera under racet.
