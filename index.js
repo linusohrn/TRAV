@@ -22,7 +22,18 @@ function reloadwindow(){
 function celebration(){
     //console.log("WORKS")
     winner = document.querySelector("h1#winner")
-    winner.textContent = "The winner is: Horse " + winning_horse;
+    if (winning_horse == 1){
+        winner.textContent = "The winner is: Spirited Love!";
+    }else if (winning_horse == 2){
+        winner.textContent = "The winner is: Life Long Journey!";
+    }else if (winning_horse == 3){
+        winner.textContent = "The winner is: Kinky Simoni!";
+    }else if (winning_horse == 4){
+        winner.textContent = "The winner is: Starshine Galaxy!";
+    }else if (winning_horse == 5){
+        winner.textContent = "The winner is: Ponny Cash!";
+    }
+    
     winner.style.visibility = "visible";
     console.log("reloading")
     setTimeout(() => reloadwindow(), 300000);
@@ -157,7 +168,7 @@ function startTimer(duration, display) {
     raceStarts()
     setTimeout(() => startTheRace(), 1500000)
 }
-
+// 1500000 är för 25 minuter, sen där uppe är det 5 min efter att racet är klart innan refresh
 
 
 
